@@ -17,7 +17,7 @@ index a72db51..9825625 100644
 +              obj.prototype = undefined;
 +              if (obj.prototype === undefined) {
 +                // eslint-disable-next-line @endo/no-polymorphic-call
-+                console.log(`Tolerating undeletable ${subPath} === undefined`);
++                console.warn(`Tolerating undeletable ${subPath} === undefined`);
 +                // eslint-disable-next-line no-continue
 +                continue;
 +              }
